@@ -1,0 +1,27 @@
+
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #77777777; 
+    
+}
+
+#containter {
+    font-size: 18px; 
+    /* width: 960px; */
+    background-color: orange;
+    /* box-sizing: border-box; */
+    text-align: center;
+    align-content: center;
+    padding: 100px;
+    margin: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+h1 {
+    color: blue;
+}
+
