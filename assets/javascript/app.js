@@ -8,17 +8,9 @@ $(document).ready(function(){
   var time = 31;
   var correct = 0;
   var incorrect =0;
-  var unanswered =5; 
+  var unanswered =0; 
  
-
-
-  // $("#containter").on("click", "#startButton", function() {
-
-  //     $("#containter").replaceWith("<div></div>");
-      
-      // alert("firstbutton");;
-  
-  
+ 
 
   $("#startbutton").on("click", run);
   $("#stop").on("click", stop);
@@ -29,33 +21,24 @@ $(document).ready(function(){
             intervalId = setInterval(decrement, 1000);
           }
 
-
         function decrement() {
 
         time--;
-
         $("#clocktimer").html("<h2>" + time + "</h2>");
 
-
         if (time === 0) {
-
           stop();
-
           alert("Time Up!");
           window.location.href = "../../assets/otherhtmlpages/endpage.html";
         }
       }
-
         function stop() {
-
-
           clearInterval(intervalId);
         }
 
         run();
    
 
-// });
           $("#queston1").click(function () {
             var selectedValue = $("input[value='Karl Marx']:checked").val();
                       
@@ -227,21 +210,6 @@ $(document).ready(function(){
                     };
                   });
       
-
-
-
-    //     $("#queston2").click(function () {
-    //       var selectedValue = $("checked").val();
-    //       // var selectedValue2 = $("input[value='Eugammon':checked").val();
-          
-    //       if (selectedValue) {
-
-    //           unanswered++
-    //           $("#incorrectAnswers").text(unanswered);
-    //           alert("Hello, your favorite bird= " + selectedValue);
-    //       };
-
-    // });
 
 
 
